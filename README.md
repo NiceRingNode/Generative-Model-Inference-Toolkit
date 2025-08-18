@@ -7,7 +7,7 @@
 
 </div>
 
-This repository provides ready-to-use inference code of mainstream generative models, such as Qwen-Image, BAGEL. The official implementations typically lack multi-GPU inference support and scatter generation and editing functionalities across different locations, making them difficult to use out-of-the-box. Also, curating and modifying the code require extrat labor. To this end, I build this repository to provide streamlined, ready-to-use inference code for the convenience of other developers. The implementation supports both single and multi-GPU setups for text-to-image generation and image editing, with code refactored and consolidated from official repositories and other open-source projects.
+This repository provides **ready-to-use inference code** of mainstream generative models, including Qwen-Image, BAGEL, etc. The official implementations typically lack multi-GPU inference support and scatter generation and editing functionalities across different locations, making them difficult to use **out-of-the-box**. Also, curating and modifying the code require extrat labor. To this end, I build this repository to provide streamlined, off-the-shelf inference code for the convenience of other developers. The implementation supports both single and multi-GPU setups for T2I generation and instruction-based image editing, with code refactored and consolidated from official repositories and other open-source projects. I hope these codes can benefit AI developers by saving time and labor.
 
 ## <div align="center" id="qwen-image">Qwen-Image</div>
 
