@@ -1,4 +1,4 @@
-# <div align="center" id="toolkit">Generative Model Inference Toolkit (Off-the-Shelf)🎨</div>
+# <div align="center" id="toolkit">Generative Model Inference Toolkit (Off-the-Shelf)🏖️</div>
 
 <div align="center">
   <a href="http://dlvc-lab.net/lianwen/"> <img alt="SCUT DLVC Lab" src="https://img.shields.io/badge/SCUT-DLVC_Lab-A85882?logo=Academia&logoColor=hsl"></a>
