@@ -7,7 +7,9 @@
 
 </div>
 
-This repository provides **ready-to-use inference code** of mainstream generative models, including Qwen-Image, BAGEL, etc. The official implementations typically lack multi-GPU inference support and scatter generation and editing functionalities across different locations, making them difficult to use **out-of-the-box**. Also, curating and modifying the code require extrat labor. To this end, I build this repository to provide streamlined, off-the-shelf inference code for the convenience of other developers. The implementation supports both *single and multi-GPU setups* for *T2I generation* and *instruction-based image editing*, with code refactored and consolidated from official repositories and other open-source projects. I hope these codes can benefit AI developers by saving time and labor.
+This repository provides **ready-to-use inference code** of mainstream generative models, including Qwen-Image, BAGEL, etc. The official implementations typically lack multi-GPU inference support and scatter generation and editing functionalities across different locations, making them difficult to use **out-of-the-box**. Also, curating and modifying the code require extrat labor. 
+
+To this end, I build this repository to provide streamlined, off-the-shelf inference code for the convenience of other developers. The implementation supports both *single and multi-GPU setups* for *T2I generation* and *instruction-based image editing*, with code refactored and consolidated from official repositories and other open-source projects. I hope this repository can benefit AI developers by saving time and labor.
 
 ## <div align="center" id="qwen-image">Qwen-Image</div>
 
@@ -17,7 +19,7 @@ This repository provides **ready-to-use inference code** of mainstream generativ
 
 The Qwen-Image team merely provide image generation code without providing the image editing code. This function is implemented by non-official developers which has now been incorporated in the [latest `diffusers` library](https://github.com/huggingface/diffusers/issues/12065). This `inference.py` in code incorporates the official T2I generation code and the non-official image editing code into one class, supporting easy, off-the-shelf inference and modification.
 
-- [x] **Multiple GPU Inference**. *Notes*: The model can be loaded on three < 24G GPUs, such as RTX 3090 or RTX 4090. If you have two 48G GPUs, you can substitute all the `cuda:2` with`cuda:0` or `cuda:1`.
+- [x] **Multiple GPU Inference**. *Notes*: The model can be loaded on three < 24G GPUs, such as RTX 3090 or RTX 4090. If you have two 48G GPUs, you can substitute all the `cuda:2` with`cuda:0` or `cuda:1`. Implementation credit goes to [@ppanzx](https://paste.ubuntu.com/p/b7ddVMQ2q8/).
 - [x] **Image Generation**.
 - [x] **Single-Image Editing**.
 - [x] **Multi-Image Editing**. 
@@ -75,4 +77,4 @@ Peirong Zhang: eeprzhang@mail.scut.edu.cn
 
 ## <div align="center">:beginner:Acknowledgement</div>
 
-[Qwen-Image Image Editing](https://github.com/huggingface/diffusers/issues/12065), [Multi-GPU Inference for Qwen-Image](https://paste.ubuntu.com/p/b7ddVMQ2q8/)
+[Qwen-Image Image Editing](https://github.com/huggingface/diffusers/issues/12065), [Multi-GPU Inference for Qwen-Image@ppanzx](https://paste.ubuntu.com/p/b7ddVMQ2q8/)
